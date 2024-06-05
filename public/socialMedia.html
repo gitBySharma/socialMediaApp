@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Create Post</h1>
+        <form>
+            <div class="form-group">
+                <label for="postLink">Post Link:</label>
+                <input type="text" class="form-control" id="postLink" required>
+            </div>
+            <div class="form-group">
+                <label for="postDesc">Post Description:</label>
+                <textarea class="form-control" name="description" id="postDesc" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success" id="submitBtn">Create Post</button>
+        </form>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Posts</h2>
+        <div id="posts" class="row">
+            <!-- Posts will be dynamically added here -->
+        </div>
+    </div>
+</body>
+<script src="socialMedia.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+
+<!-- Bootstrap library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
